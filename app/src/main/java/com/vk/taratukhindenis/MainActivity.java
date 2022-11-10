@@ -5,11 +5,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
-
-    private Object id;
+public class MainActivity extends AppCompatActivity implements OnClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,16 +17,19 @@ public class MainActivity extends AppCompatActivity {
 
         Button buttonRed = findViewById(R.id.buttonRed);
 
-        buttonRed.setOnClickListener((View.OnClickListener) this);
+        buttonRed.setOnClickListener(this);
     }
 
     public void onClick(View v){
         Intent a;
-        switch (v.getId()){
-            case (id.):
-                a = new Intent(this, Red.class);
-                startActivity(a);
-                break;
+        if (v.getId() == R.id.buttonRed) {
+            a = new Intent(this, Red.class);
+            startActivity(a);
         }
+    }
+
+    @Override
+    public void onPointerCaptureChanged(boolean hasCapture) {
+        super.onPointerCaptureChanged(hasCapture);
     }
 }
