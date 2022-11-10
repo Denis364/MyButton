@@ -4,4 +4,9 @@
     <string name="orange">orange</string>
     <string name="yellow" />
     <string name="yellow1">Yellow</string>
+    <string name="green">Green</string>
+    <string name="_4caf50">#4CAF50</string>
+    <string name="green1">Green</string>
+    <string name="red1">Red</string>
+    <string name="orange1">Orange</string>
 </resources>
