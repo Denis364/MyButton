@@ -16,14 +16,20 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
         setContentView(R.layout.activity_main);
 
         Button buttonRed = findViewById(R.id.buttonRed);
+        Button buttonOrange = findViewById(R.id.buttonOrange);
 
         buttonRed.setOnClickListener(this);
+        buttonOrange.setOnClickListener(this);
     }
 
     public void onClick(View v){
         Intent a;
         if (v.getId() == R.id.buttonRed) {
             a = new Intent(this, Red.class);
+            startActivity(a);
+        }
+        if (v.getId() == R.id.buttonOrange){
+            a = new Intent(this, Orange.class);
             startActivity(a);
         }
     }
