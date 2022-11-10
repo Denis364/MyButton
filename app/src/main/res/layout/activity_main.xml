@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="64dp"
         android:layout_marginEnd="16dp"
         android:text="@string/red"
         android:backgroundTint="#E01600"
@@ -28,6 +28,7 @@
         android:layout_marginEnd="16dp"
         android:backgroundTint="#FF9900"
         android:text="@string/orange"
+        android:textColor="#37474F"
         app:layout_constraintEnd_toEndOf="@+id/buttonRed"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/buttonRed"
@@ -56,11 +57,12 @@
         android:layout_marginEnd="16dp"
         android:backgroundTint="#4CAF50"
         android:text="@string/green1"
-        android:textColor="@color/white"
+        android:textColor="#263238"
         app:layout_constraintEnd_toEndOf="@+id/buttonYellow"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/buttonYellow"
-        app:layout_constraintTop_toBottomOf="@+id/buttonYellow" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonYellow"
+        tools:ignore="TextContrastCheck,TextContrastCheck,TextContrastCheck" />
 
     <Button
         android:id="@+id/buttonHeavenly"
@@ -75,7 +77,8 @@
         app:layout_constraintEnd_toEndOf="@+id/buttonGreen"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/buttonGreen"
-        app:layout_constraintTop_toBottomOf="@+id/buttonGreen" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonGreen"
+        tools:ignore="DuplicateSpeakableTextCheck" />
 
     <Button
         android:id="@+id/buttonBlue"
@@ -90,5 +93,20 @@
         app:layout_constraintEnd_toEndOf="@+id/buttonHeavenly"
         app:layout_constraintStart_toStartOf="@+id/buttonHeavenly"
         app:layout_constraintTop_toBottomOf="@+id/buttonHeavenly" />
+
+    <Button
+        android:id="@+id/buttonViolet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#6A33CD"
+        android:text="@string/violet1"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/buttonBlue"
+        app:layout_constraintStart_toStartOf="@+id/buttonBlue"
+        app:layout_constraintTop_toBottomOf="@+id/buttonBlue" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
