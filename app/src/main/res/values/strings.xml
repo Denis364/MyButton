@@ -2,4 +2,6 @@
     <string name="app_name">MyRainbow</string>
     <string name="red">red</string>
     <string name="orange">orange</string>
+    <string name="yellow" />
+    <string name="yellow1">Yellow</string>
 </resources>
