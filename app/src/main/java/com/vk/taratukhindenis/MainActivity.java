@@ -19,11 +19,13 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
         Button buttonOrange = findViewById(R.id.buttonOrange);
         Button buttonYellow = findViewById(R.id.buttonYellow);
         Button buttonGreen = findViewById(R.id.buttonGreen);
+        Button buttonHeavenly = findViewById(R.id.buttonHeavenly);
 
         buttonRed.setOnClickListener(this);
         buttonOrange.setOnClickListener(this);
         buttonYellow.setOnClickListener(this);
         buttonGreen.setOnClickListener(this);
+        buttonHeavenly.setOnClickListener(this);
     }
 
     public void onClick(View v){
@@ -42,6 +44,10 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
         }
         if (v.getId() == R.id.buttonGreen){
             a = new Intent(this, Green.class);
+            startActivity(a);
+        }
+        if (v.getId() == R.id.buttonHeavenly){
+            a = new Intent(this, Heavenly.class);
             startActivity(a);
         }
     }
