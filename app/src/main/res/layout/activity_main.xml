@@ -77,4 +77,18 @@
         app:layout_constraintStart_toStartOf="@+id/buttonGreen"
         app:layout_constraintTop_toBottomOf="@+id/buttonGreen" />
 
+    <Button
+        android:id="@+id/buttonBlue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#0744FB"
+        android:text="@string/heavenly"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/buttonHeavenly"
+        app:layout_constraintStart_toStartOf="@+id/buttonHeavenly"
+        app:layout_constraintTop_toBottomOf="@+id/buttonHeavenly" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

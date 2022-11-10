@@ -20,34 +20,40 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
         Button buttonYellow = findViewById(R.id.buttonYellow);
         Button buttonGreen = findViewById(R.id.buttonGreen);
         Button buttonHeavenly = findViewById(R.id.buttonHeavenly);
+        Button buttonBlue = findViewById(R.id.buttonBlue);
 
         buttonRed.setOnClickListener(this);
         buttonOrange.setOnClickListener(this);
         buttonYellow.setOnClickListener(this);
         buttonGreen.setOnClickListener(this);
         buttonHeavenly.setOnClickListener(this);
+        buttonBlue.setOnClickListener(this);
     }
 
-    public void onClick(View v){
+    public void onClick(View v) {
         Intent a;
         if (v.getId() == R.id.buttonRed) {
             a = new Intent(this, Red.class);
             startActivity(a);
         }
-        if (v.getId() == R.id.buttonOrange){
+        if (v.getId() == R.id.buttonOrange) {
             a = new Intent(this, Orange.class);
             startActivity(a);
         }
-        if (v.getId() == R.id.buttonYellow){
+        if (v.getId() == R.id.buttonYellow) {
             a = new Intent(this, Yellow.class);
             startActivity(a);
         }
-        if (v.getId() == R.id.buttonGreen){
+        if (v.getId() == R.id.buttonGreen) {
             a = new Intent(this, Green.class);
             startActivity(a);
         }
-        if (v.getId() == R.id.buttonHeavenly){
+        if (v.getId() == R.id.buttonHeavenly) {
             a = new Intent(this, Heavenly.class);
+            startActivity(a);
+        }
+        if (v.getId() == R.id.buttonBlue) {
+            a = new Intent(this, Blue.class);
             startActivity(a);
         }
     }
